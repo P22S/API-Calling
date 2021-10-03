@@ -20,12 +20,14 @@
         ++flag;
 
         if(flag%2==0){
-            document.getElementById("body").style.backgroundColor = "white";
+            var doc = getElementById("body");
+            var doc1 = getElementById("button");
+            doc("body").style.backgroundColor = "white";
             document.getElementById("nav").classList.add("navcol");
-            document.getElementById("body").style.color = "black";
-            document.getElementById("button").classList.remove("btn-light");
-            document.getElementById("button").classList.add("btn-secondary");
-            document.getElementById("button").innerHTML= "Dark theme?"
+            doc("body").style.color = "black";
+            doc1.classList.remove("btn-light");
+            doc1.classList.add("btn-secondary");
+            doc1.innerHTML= "Dark theme?"
             document.getElementById("submit").classList.remove("btn-secondary");
             document.getElementById("submit").classList.add("btn-primary");
 
